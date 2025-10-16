@@ -299,28 +299,31 @@
 //--- blog-one.html ---
 .blog-one {
   &__text {
-    border: 1px solid #ececec;
-    border-top: none;
     padding: 30px;
-    margin-top: -1px;
+    border: 1px solid vars.$bg-dark;
+    border-top: none;
     h4 {
-      color: vars.$title;
-      font-size: 22px;
-      @extend %roboto-500;
       margin: 25px 0;
+      @extend %roboto-500;
+      font-size: 22px;
+      color: vars.$title;
     }
     p {
       margin: 25px 0;
     }
     blockquote {
-      background-color: #f6f6f6;
-      border-left: 3px solid vars.$accent;
-      padding: 35px;
-      font-size: 22px;
-      @extend %roboto-400;
-      color: vars.$title;
       margin: 25px 0;
+      padding: 35px;
+      @extend %roboto-400;
+      font-size: 22px;
+      color: vars.$title;
+      background-color: vars.$bg;
+      border-left: 3px solid vars.$accent;
     }
+  }
+  &__info {
+    display: flex;
+    margin-bottom: 25px;
   }
   &__left-img {
     float: left;
@@ -332,10 +335,7 @@
     margin-left: 30px;
     margin-bottom: 10px;
   }
-  &__info {
-    display: flex;
-    margin-bottom: 25px;
-  } 
+   
   &__info-item{
     a{
       transition: color .3s ease-in-out;
@@ -601,6 +601,11 @@
     padding-bottom: 0;
   }
 
+  //--- blog-one.html ---
+  .blog-one{
+
+  }
+
   //--- index.html ---
   .blog{
     .blog__item{
@@ -678,6 +683,27 @@
       &:hover{
         color: vars.$title;
       }
+    }
+  }
+
+  //--- blog-one.html ---
+  .blog-one{
+    &__text{
+      padding: 10px;
+    }
+    h4{
+      margin: 0;
+    }
+    p {
+      margin: 5px 0;
+    }
+    blockquote {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    &__info {
+      margin-bottom: 10px;
     }
   }
 

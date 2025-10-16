@@ -1221,16 +1221,15 @@ footer {
 }
 
 .blog-one__text {
+    padding: 30px;
     border: 1px solid #ececec;
     border-top: none;
-    padding: 30px;
-    margin-top: -1px;
 }
 
 .blog-one__text h4 {
-    color: #29282d;
-    font-size: 22px;
     margin: 25px 0;
+    font-size: 22px;
+    color: #29282d;
 }
 
 .blog-one__text p {
@@ -1238,12 +1237,17 @@ footer {
 }
 
 .blog-one__text blockquote {
-    background-color: #f6f6f6;
-    border-left: 3px solid #fe3e57;
+    margin: 25px 0;
     padding: 35px;
     font-size: 22px;
     color: #29282d;
-    margin: 25px 0;
+    background-color: #f6f6f6;
+    border-left: 3px solid #fe3e57;
+}
+
+.blog-one__info {
+    display: flex;
+    margin-bottom: 25px;
 }
 
 .blog-one__left-img {
@@ -1256,11 +1260,6 @@ footer {
     float: right;
     margin-left: 30px;
     margin-bottom: 10px;
-}
-
-.blog-one__info {
-    display: flex;
-    margin-bottom: 25px;
 }
 
 .blog-one__info-item a {
@@ -1604,6 +1603,28 @@ footer {
 
     .latest-post__title-link:hover {
         color: #29282d;
+    }
+
+    .blog-one__text {
+        padding: 10px;
+    }
+
+    .blog-one h4 {
+        margin: 0;
+    }
+
+    .blog-one p {
+        margin: 5px 0;
+    }
+
+    .blog-one blockquote {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .blog-one__info {
+        margin-bottom: 10px;
     }
 
     .blog__item {
